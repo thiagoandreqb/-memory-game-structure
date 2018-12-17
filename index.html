@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+    <style>
+        .flipper.flip{  		
+            transform: rotateY(180deg);
+        }
+
+        .tamanho {
+            height: 60px;
+            width: 60px;
+        }
+
+        .flipper {
+            margin: 5px;
+            transition: 0.6s;  	
+            transform-style: preserve-3d;    	
+            position: relative;  
+        }
+
+        .front, .back {  	
+            backface-visibility: hidden;    	
+            position: absolute;  	
+            top: 0;  	
+            left: 0;
+        }
+        
+        .front { z-index: 2; }
+        
+        .back { transform: rotateY(180deg); }
+    </style>
+</head>
+<body>
+    <div class="flip-container" style="display: flex; flex: 1; flex-direction: row; flex-wrap: wrap; align-items: center; justify-content: center;">
+        <div class="flipper tamanho" onClick="this.classList.toggle('flip');">
+            <div class="front">
+                <div class="tamanho" style="background: green;"></div>
+            </div>
+            <div class="back">
+                <div class="tamanho" style="background: yellow;"></div>
+            </div>
+        </div>
+        <div class="flipper tamanho" onClick="this.classList.toggle('flip');">
+            <div class="front">
+                <div class="tamanho" style="background: green;"></div>
+            </div>
+            <div class="back">
+                <div class="tamanho" style="background: yellow;"></div>
+            </div>
+        </div>
+        <div class="flipper tamanho" onClick="this.classList.toggle('flip');">
+            <div class="front">
+                <div class="tamanho" style="background: green;"></div>
+            </div>
+            <div class="back">
+                <div class="tamanho" style="background: yellow;"></div>
+            </div>
+        </div>
+        <div class="flipper tamanho" onClick="this.classList.toggle('flip');">
+            <div class="front">
+                <div class="tamanho" style="background: green;"></div>
+            </div>
+            <div class="back">
+                <div class="tamanho" style="background: yellow;"></div>
+            </div>
+        </div>
+        <div class="flipper tamanho" onClick="this.classList.toggle('flip');">
+            <div class="front">
+                <div class="tamanho" style="background: green;"></div>
+            </div>
+            <div class="back">
+                <div class="tamanho" style="background: yellow;"></div>
+            </div>
+        </div>
+        <div class="flipper tamanho" onClick="this.classList.toggle('flip');">
+            <div class="front">
+                <div class="tamanho" style="background: green;"></div>
+            </div>
+            <div class="back">
+                <div class="tamanho" style="background: yellow;"></div>
+            </div>
+        </div>
+        <div class="flipper tamanho" onClick="this.classList.toggle('flip');">
+            <div class="front">
+                <div class="tamanho" style="background: green;"></div>
+            </div>
+            <div class="back">
+                <div class="tamanho" style="background: yellow;"></div>
+            </div>
+        </div>
+        <div class="flipper tamanho" onClick="this.classList.toggle('flip');">
+            <div class="front">
+                <div class="tamanho" style="background: green;"></div>
+            </div>
+            <div class="back">
+                <div class="tamanho" style="background: yellow;"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
