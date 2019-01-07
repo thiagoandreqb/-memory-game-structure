@@ -10,6 +10,10 @@
         body {
             margin: 0;
             overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
         .flip-container {
             display: flex;
@@ -17,6 +21,7 @@
             justify-content: center;
             flex-direction: row;
             flex-wrap: wrap;
+            /* height: 98vh; */
             height: 100vh;
         }
         .flipper.flip{  		
@@ -28,9 +33,20 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            
+            /* IMPAR TELA MAXIMA */
+            /* margin: 0vw 1.28vw 0vw 1vw; */
+            /* height: 12vw;
+            width: 12vw; */
+
+            /* PAR TELA CENTRALIZADA */
             margin: 0 1vw 0 1vw;
-            height: 13vw;
-            width: 13vw;
+            /* 40 Cartas */
+            /* height: 16vw;
+            width: 16vw; */
+            /* 60 cartas */
+            height: 12.5vw;
+            width: 12.5vw;
         }
         .front, .back {  	
             backface-visibility: hidden;    	
@@ -51,15 +67,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
-    <div class="flip-container">
-    </div>
+    <div class="flip-container"></div>
 </body>
 </html>
 
 <script>
-// $( document ).ready(function() {
-//     console.log( "ready!" );
-// });
     for (let i = 0; i < 60; i++) {
         $('.flip-container').append(
             `<div class="flipper" onClick="this.classList.toggle('flip');">
